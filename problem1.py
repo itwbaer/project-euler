@@ -17,7 +17,7 @@ def sum_of_multiples(lowerLimit, upperLimit, divisors):
     multSum = 0
 
     for n in range(lowerLimit, upperLimit):
-        #for each divisor, test if n divisible by it
+        # for each divisor, test if n divisible by it
         for d in divisors:
             if is_divisible_by(n, d):
                 multSum = (multSum + n)

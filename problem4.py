@@ -29,8 +29,10 @@ def is_palindrome(n):
 
 
 def largest_palindrome(n, d):
-    # based on number of digits, we can know where to start looking
-    # d-1 would be how many 0's there are in one number, multipled by how many numbers there are, raise to the power of ten
+    """ based on number of digits, we can know where to start looking
+    d-1 would be how many 0's there are in one number, multiplied by how many numbers there are
+    raise to the power of ten
+    """
     smallest = 10 ** ((d - 1) * n)
     largest = 10 ** (((d + 1) - 1) * n) - 1
 
